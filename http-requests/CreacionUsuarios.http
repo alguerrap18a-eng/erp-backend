@@ -1,0 +1,25 @@
+### Obtener todos los usuarios
+GET http://localhost:8080/api/v3/usuarios
+Accept: application/json
+
+### ---
+
+### Obtener un usuario por ID
+GET http://localhost:8080/api/v3/usuarios/1
+Accept: application/json
+
+### ---
+
+### Crear un nuevo usuario (depende de una sucursal existente, ej. id_sucursal: 1)
+POST http://localhost:8080/api/v3/usuarios
+Content-Type: application/json
+
+{
+  "idSucursal": 1,
+  "nombre": "Juan Pérez",
+  "username": "jperez",
+  "passwordHash": "$2a$10$encryptedPasswordHashExample123456",
+  "email": "juan.perez@empresa.com",
+  "estado": true,
+  "rol": "ADMIN"
+}

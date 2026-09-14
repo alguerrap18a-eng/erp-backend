@@ -9,11 +9,11 @@ import org.springframework.transaction.annotation.Transactional;
 import java.util.List;
 
 @Service
-public class EmpresaService {
+public class EmpresasService {
 
     private final EmpresasRepository empresaRepository;
 
-    public EmpresaService(EmpresasRepository empresaRepository) {
+    public EmpresasService(EmpresasRepository empresaRepository) {
         this.empresaRepository = empresaRepository;
     }
 

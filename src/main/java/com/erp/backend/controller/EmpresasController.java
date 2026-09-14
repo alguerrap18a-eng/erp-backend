@@ -1,7 +1,7 @@
 package com.erp.backend.controller;
 
-import com.erp.backend.entity.Empresa;
-import com.erp.backend.service.EmpresaService;
+import com.erp.backend.entity.Empresas;
+import com.erp.backend.service.EmpresasService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -9,27 +9,27 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/empresas")
-public class EmpresaController {
+@RequestMapping("/api/v1/sucursales")
+public class EmpresasController {
 
-    private final EmpresaService empresaService;
+    private final EmpresasService empresaService;
 
-    public EmpresaController(EmpresaService empresaService) {
-        this.empresaService = empresaService;
+    public EmpresasController(EmpresasService empresasService) {
+        this.empresaService = empresasService;
     }
 
     @GetMapping
-    public List<Empresa> getAll() {
+    public List<Empresas> getAll() {
         return empresaService.findAll();
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<Empresa> getById(@PathVariable Long id) {
+    public ResponseEntity<Empresas> getById(@PathVariable Long id) {
         return ResponseEntity.ok(empresaService.findById(id));
     }
 
     @PostMapping
-    public ResponseEntity<Empresa> create(@RequestBody Empresa empresa) {
+    public ResponseEntity<Empresas> create(@RequestBody Empresas empresa) {
         return new ResponseEntity<>(empresaService.save(empresa), HttpStatus.CREATED);
     }
 }

@@ -1,0 +1,26 @@
+
+### Crear una nueva sucursal (depende de una empresa existente, ej. id_empresa: 1)
+POST http://localhost:8080/api/v2/sucursales
+Content-Type: application/json
+
+{
+  "idEmpresa": 1,
+  "nombreSucursal": "Sucursal Norte Matriz",
+  "esMatriz": true,
+  "telefono": "6141234567",
+  "emailContacto": "norte@empresa.com",
+  "calle": "Av. Tecnológico",
+  "numeroExterior": "1500",
+  "numeroInterior": "Local 4",
+  "colonia": "San Felipe",
+  "codigoPostal": "31203",
+  "ciudadMunicipio": "Chihuahua",
+  "estadoProvincia": "Chihuahua",
+  "pais": "México",
+  "estado": true
+}
+
+
+### Obtener todas las sucursales
+GET http://localhost:8080/api/v1/sucursales
+Accept: application/json

@@ -1,0 +1,18 @@
+### Crear una nueva empresa (v1)
+POST http://localhost:8080/api/v1/sucursales
+Content-Type: application/json
+
+{
+  "razonSocial": "Empresa de Prueba S.A. de C.V.",
+  "nombreComercial": "Mi Empresa react",
+  "rfc": "PRUEBA1234567",
+  "regimenFiscal": "General de Ley Personas Morales",
+  "emailCorporativo": "contacto@empresa.com",
+  "sitioWeb": "https://www.empresa.com",
+  "rutaLogo": "/logos/empresa.png",
+  "monedaBase": "MXN",
+  "repreLegal": "Juan Pérez Gómez"
+}
+
+### Obtener todas las empresas registradas (v1)
+GET http://localhost:8080/api/v1/sucursales

@@ -1,0 +1,21 @@
+### Obtener todas las sesiones de inicio
+GET http://localhost:8080/api/v4/sesion-inicio
+Accept: application/json
+
+###
+
+### Obtener una sesión de inicio por ID
+GET http://localhost:8080/api/v4/sesion-inicio/1
+Accept: application/json
+
+###
+
+### Crear una nueva sesión de inicio
+POST http://localhost:8080/api/v4/sesion-inicio
+Content-Type: application/json
+
+{
+  "idUsuario": 1,
+  "fechaTermino": null,
+  "estatus": true
+}

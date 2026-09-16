@@ -16,6 +16,7 @@ Content-Type: application/json
 
 {
   "idUsuario": 1,
+  "token": "tu_token_de_prueba_123",
   "fechaTermino": null,
   "estatus": true
 }

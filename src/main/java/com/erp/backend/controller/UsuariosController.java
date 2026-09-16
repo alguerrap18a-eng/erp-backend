@@ -32,4 +32,5 @@ public class UsuariosController {
     public ResponseEntity<Usuarios> create(@RequestBody Usuarios usuario) {
         return new ResponseEntity<>(usuariosService.save(usuario), HttpStatus.CREATED);
     }
+
 }

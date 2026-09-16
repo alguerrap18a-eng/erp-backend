@@ -11,6 +11,10 @@ import java.time.LocalDateTime;
 @Setter
 public class SesionInicio {
 
+
+    @Column(length = 500)
+    private String token;
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id_sesion_inicio")

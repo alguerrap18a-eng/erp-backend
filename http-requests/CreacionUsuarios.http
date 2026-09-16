@@ -16,10 +16,10 @@ Content-Type: application/json
 
 {
   "idSucursal": 1,
-  "nombre": "Juan Pérez",
-  "username": "jperez",
-  "passwordHash": "$2a$10$encryptedPasswordHashExample123456",
-  "email": "juan.perez@empresa.com",
+  "nombre": "Andres Leonardo",
+  "username": "andres",
+  "passwordHash": "123123",
+  "email": "andreslgp@empresa.com",
   "estado": true,
   "rol": "ADMIN"
 }
